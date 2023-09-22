@@ -11,7 +11,7 @@ cat << "EOF"
  //    / /    / /    / /\\       / /    //   / / //   / / / /              ) )
 //    / /    / /    / /  \\     / /    ((___/ / ((___/ / / /____/ / ((___ / /
 
-~~by Risszxx (https://myth.rip)
+~~by Riszzxx (https://myth.rip)
 
 EOF
 
@@ -40,7 +40,7 @@ else
 fi
 
 sleep 1
-echo "Building RisszxxLeak-Tools to a single executable in 3 seconds..."
+echo "Building Leak-Tools to a single executable in 3 seconds..."
 sleep 3
 
 chmod +x leaktrace.py
@@ -48,15 +48,15 @@ chmod +x leaktrace.py
 if command -v pyinstaller >/dev/null 2>&1; then
     pyinstaller leaktrace.py --onefile -F
     sleep 1
-    chmod +x dist/leaktracetools
-    sudo mv dist/leaktracetools /usr/local/bin/
-    rm leaktracetools.spec
+    chmod +x dist/leaktrace
+    sudo mv dist/leaktrace /usr/local/bin/
+    rm leaktrace.spec
     rm -r build
     rm -r dist
-    echo "Done! Type leaktracetools in your terminal to start! OR Do you want to start RisszxxLeakTools now? [y/n]"
+    echo "Done! Type RisszTools in your terminal to start! OR Do you want to start RisszxTools now? [y/n]"
     read -r answer
     if [ "$answer" = "y" ]; then
-        h4xtools
+        leaktrace
     fi
 else
     echo "pyinstaller not installed or not in PATH!"
