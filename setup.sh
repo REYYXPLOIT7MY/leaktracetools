@@ -56,7 +56,7 @@ if command -v pyinstaller >/dev/null 2>&1; then
     echo "Done! Type leaktracetools in your terminal to start! OR Do you want to start RisszxxLeakTools now? [y/n]"
     read -r answer
     if [ "$answer" = "y" ]; then
-        leaktracetools
+        h4xtools
     fi
 else
     echo "pyinstaller not installed or not in PATH!"
